@@ -1,0 +1,62 @@
+﻿<Window x:Class="Puzzle15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Puzzle15" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" FontSize="25">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2"
+                   Text="Defineix el format del puzzle" 
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center" 
+                   FontSize="40" 
+                   />
+        <DockPanel Grid.Row="1" Grid.Column="0" Margin="40,20,20,20">
+            <TextBlock DockPanel.Dock="Left" 
+                       Text="Nº Files:"
+                       VerticalAlignment="Center"
+                       />
+            <xctk:IntegerUpDown DockPanel.Dock="Left" 
+                    Name="txtNFiles"
+                    Margin="20"
+                    Minimum="3"
+                    Maximum="8"
+                    Increment="1"
+                    Value="3"
+                     />
+        </DockPanel>
+        <DockPanel Grid.Row="1" Grid.Column="1" Margin="0,20,20,20">
+            <TextBlock DockPanel.Dock="Left" 
+                       Text="Nº Columnes:"
+                       VerticalAlignment="Center"
+                       />
+            <xctk:IntegerUpDown DockPanel.Dock="Left" 
+                    Name="txtNColumnes"
+                    Margin="20"
+                    Minimum="3"
+                    Maximum="8"
+                    Increment="1"
+                    Value="3"/>
+        </DockPanel>
+        <Button Grid.Row="2" Grid.ColumnSpan="2" 
+                Name="btnNFilesColumnes" 
+                Content="Comencem!" 
+                FontSize="25" 
+                Margin="40"
+                Click="btnNFilesColumnes_Click"
+                />
+
+    </Grid>
+</Window>
