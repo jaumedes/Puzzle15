@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:Puzzle15"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="DiccionariRecursos/Estils.xaml"/>
+                <ResourceDictionary Source="DiccionariRecursos/Pinzells.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

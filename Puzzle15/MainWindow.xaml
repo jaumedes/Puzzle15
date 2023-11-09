@@ -31,7 +31,7 @@
             <xctk:IntegerUpDown DockPanel.Dock="Left" 
                     Name="txtNFiles"
                     Margin="20"
-                    Minimum="3"
+                    Minimum="2"
                     Maximum="8"
                     Increment="1"
                     Value="3"
@@ -45,7 +45,7 @@
             <xctk:IntegerUpDown DockPanel.Dock="Left" 
                     Name="txtNColumnes"
                     Margin="20"
-                    Minimum="3"
+                    Minimum="2"
                     Maximum="8"
                     Increment="1"
                     Value="3"/>

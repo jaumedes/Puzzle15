@@ -31,7 +31,7 @@ namespace Puzzle15
 
             if (int.TryParse(txtNFiles.Text, out nFiles) && int.TryParse(txtNColumnes.Text, out nColumnes))
             {
-                if (nFiles >= 3 && nFiles <= 8 && nColumnes >= 3 && nColumnes <= 8)
+                if (nFiles >= 2 && nFiles <= 8 && nColumnes >= 2 && nColumnes <= 8)
                 {
                     WndPuzzle wndPuzzle1 = new WndPuzzle(nFiles, nColumnes);
                     wndPuzzle1.ShowDialog();

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
             Title="WndPuzzle" Height="450" Width="800" PreviewKeyDown="Window_KeyDown">
 
-    <DockPanel>
+    <DockPanel x:Name="dpPrincipal">
         <StatusBar DockPanel.Dock="Bottom">
             <StatusBarItem>
                 <TextBlock Name ="tbTemps" Text="00:00:00:0"/>
@@ -34,9 +34,13 @@
                VerticalAlignment="Center"
                />
 
-        <Grid DockPanel.Dock="Bottom"  Name="grGraella">
+        <TextBlock DockPanel.Dock="Top" Name="tbFinalitzat" Text="Joc Completat!" Visibility="Collapsed" 
+               FontSize="50"
+               Margin="20"
+               TextAlignment="Center"
+               VerticalAlignment="Center"
+               />
 
-        </Grid>
 
     </DockPanel>
 </Window>
